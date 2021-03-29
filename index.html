@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+ <html>
+      <head>
+           <title>Mocha Tests</title>
+           <!-- подключаем стили моча -->
+            <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+     </head>
+      <body>
+          <!-- Cайт хелпер по моче -->
+          <!-- https://coderlessons.com/articles/veb-razrabotka-articles/modulnoe-testirovanie-javascript-s-pomoshchiu-mocha-i-chai -->
+
+
+        <!-- Инструкция по установке -->
+        <!-- npm init => package.json или в свой проект установить -->
+        <!-- Если вы хотите проверить код в браузере, запустите npm install mocha chai --save-dev -->
+        <!-- Чтобы включить Chai, добавьте var chai = require('chai'); в верхней части тестового файла. -->
+        <!-- cоздайте в src папку test/ => test/testOne.js  и в нем описываем тест -->
+
+          <!-- подключаем куда выводить тесты по id -->
+           <div id="mocha"></div>
+
+           <!-- подключаем пакеты, что установили через npm -->
+            <script src="node_modules/mocha/mocha.js"></script>
+            <script src="node_modules/chai/chai.js"></script>
+            <!-- вызов мочи и установка стандартов тестирования -->
+            <script>mocha.setup('bdd')</script>
+
+             <!-- load code you want to test here --> <!-- load your test files here -->
+             <!-- Запуск mocha -->
+             <script> mocha.run(); </script> 
+
+             <!-- Мой скрипт-тест -->
+             <script src="test.js"></script>
+    </body> 
+    </html> 
